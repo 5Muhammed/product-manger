@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Manger</title>
+    <!-- css Linked Files -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <main class="w-75 mx-auto">
+        <section class="product-form  p-4 rounded my-3 bg-info" id="myForm">
+            <div class="input-form pb-2" id="inputForm">
+                <label for="prdocutName">Product Name:</label>
+                <input type="text" class="product-name form-control" id="prdocutName" name="prdocutName"
+                    placeholder="Product Name....">
+            </div>
+            <div class="input-form pb-2" id="inputForm">
+                <label for="productPrice">Product Price:</label>
+                <input type="number" class="product-price form-control" id="productPrice" name="productPrice"
+                    placeholder="Product Price...." required>
+            </div>
+            <div class="input-form pb-2" id="inputForm">
+                <label for="productCategory">Product Category:</label>
+                <input type="text" class="product-category form-control" id="productCategory" name="productCategory"
+                    placeholder="Product Category....">
+            </div>
+            <div class="input-form pb-2" id="inputForm">
+                <label for="productDescription">Product Description:</label>
+                <textarea type="text" class="product-description form-control" id="productDescription"
+                    name="productDescription" placeholder="Product Description...."></textarea>
+            </div>
+            <button type="button" class="add-button btn btn-primary w-100 my-2" id="addButton" onclick="addProduct()">Add Product</button>
+            <button type="button" class="update-button btn btn-primary w-100 my-2 d-none " id="updateButton" onclick="updateProduct()">Update Product</button>
+        </section>
+        <section class="search mt-4" id="search">
+            <input type="search" class="search-input w-75 form-control mx-auto" oninput="searchProduct()" id="searchInput" placeholder="Search....">
+        </section>
+        <section class="our-products-tabel my-5 " id="ourProductsTabel">
+            <table class="w-100  rounded bg-white table-striped-columns">
+                <thead>
+                    <tr class="text-center">
+                        <th>Product Name</th>
+                        <th>Product Price</th>
+                        <th>Product Description</th>
+                        <th>Product Category</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody class="table-body" id="tabelBody">
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <!-- JS Linked Files -->
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+body{
+    background-color: #EEE;
+}
+.product-form .product-description{
+    height: 100px;
+    resize: none;
+
+}
+
+.our-products-tabel tr td, th{
+    padding-block: 15px;
+}
